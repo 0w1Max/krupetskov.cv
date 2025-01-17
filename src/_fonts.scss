@@ -1,0 +1,17 @@
+@use './mixins';
+
+@include mixins.font-face('Alumni Sans Italic', 'AlumniSans-Italic', normal, italic);
+@include mixins.font-face('Alumni Sans Regular', 'AlumniSans-Regular', normal, normal);
+@include mixins.font-face('Alumni Sans Bold', 'AlumniSans-Bold', bold, normal);
+@include mixins.font-face('Alumni Sans Medium', 'AlumniSans-Bold', 500, normal);
+
+@include mixins.font-face('IBM Plex Mono Italic', 'IBMPlexMono-Italic', normal, italic);
+@include mixins.font-face('IBM Plex Mono Regular', 'IBMPlexMono-Regular', normal, normal);
+@include mixins.font-face('IBM Plex Mono Bold', 'IBMPlexMono-Bold', bold, normal);
+@include mixins.font-face('IBM Plex Mono Medium', 'IBMPlexMono-Medium', 500, normal);
+
+@include mixins.font-face('Ubuntu Mono Italic', 'UbuntuMono-Italic', normal, italic);
+@include mixins.font-face('Ubuntu Mono Regular', 'UbuntuMono-Regular', normal, normal);
+@include mixins.font-face('Ubuntu Mono Bold', 'UbuntuMono-Bold', bold, normal);
+
+@include mixins.font-face('Russo One', 'RussoOne-Regular', normal, normal);

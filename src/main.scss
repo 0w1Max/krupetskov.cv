@@ -1,7 +1,54 @@
-$font-size: 1rem;
-$font-color: lch(28 99 35);
+@use './reset';
+@use './variables' as *;
+@use './mixins';
+@use './fonts';
+body {
+  @include mixins.font('Ubuntu Mono Italic', 24px, $text-color);
+  background-color: $bg-color;
+}
 
-html {
-  font-size: $font-size;
-  color: $font-color;
+header {
+  display: grid;
+  grid-template-areas:
+                'p n'
+                'p t';
+  .header__photo {
+    grid-area: p;
+
+    img {
+      border-radius: 30%;
+    }
+  }
+
+  .header__nav {
+    grid-area: n;
+
+    .nav__list {
+      display: flex;
+      list-style: none;
+
+      .nav__item {
+        a {
+          @include mixins.font('Russo One', 24px, $text-color);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .header__title {
+    grid-area: t;
+
+    .title__text {
+
+    }
+
+    .title__text--h1 {
+
+    }
+
+    .title__text--h2 {
+
+    }
+  }
 }
